@@ -64,7 +64,7 @@ export default function FavoritesPage() {
 
               <p className="Ayah">{f.text}</p>
               <p className="meta">
-                سورة {f.surah?.name || "غير معروف"} • آية {f.numberInSurah}
+                {f.surah?.name || "غير معروف"} • آية {f.numberInSurah}
               </p>
 
               {f.audio && (
