@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Quran Favorites App
 
-## Getting Started
+تطبيق ويب لعرض آيات من القرآن الكريم بشكل عشوائي مع إمكانية {حفظ الآيات المفضلة, وتشغيل صوتها،, بالإضافة إلى تغيير المود (فاتح/داكن)}.  
 
-First, run the development server:
+---
 
+ 📖 الوصف
+هذا المشروع يتيح للمستخدمين:
+- عرض آية عشوائية من القرآن الكريم.
+- سماع صوت الآية.
+- حفظ الآيات المفضلة في صفحة مخصصة.
+- إزالة آية واحدة أو حذف كل المفضلة.
+- مشاركة الآية عبر النسخ أو المشاركة المباشرة.
+- التبديل بين الوضع الفاتح والوضع الداكن.
+
+تم تطوير المشروع باستخدام Next.js و React، مع التخزين المحلي للآيات المفضلة.
+
+---
+
+ 🛠️ المميزات
+- عرض آية عشوائية.
+- حفظ الآيات المفضلة مع الاحتفاظ بالصوت.
+- إدارة المفضلة (إزالة آية أو حذف الكل).
+- مشاركة الآيات.
+- دعم الوضع الليلي/النهاري.
+- تصميم متجاوب لجميع الشاشات (موبايل، تابليت، شاشات كبيرة).
+
+---
+
+💻 التقنيات المستخدمة
+- [Next.js](https://nextjs.org/)
+- React 18
+- CSS متجاوب + CSS Variables
+- [SweetAlert2](https://sweetalert2.github.io/) لإشعارات الحفظ
+- LocalStorage لتخزين المفضلة
+- API: [alquran.cloud](https://alquran.cloud/api)
+
+---
+ 🚀 طريقة التشغيل 
+1. استنساخ المشروع:
 ```bash
+git clone https://github.com/username/quran-favorites-app.gt
+
+cd quran-favorites-app
+npm install
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
